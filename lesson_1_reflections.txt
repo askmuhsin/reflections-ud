@@ -60,4 +60,34 @@ git log
 git checkout
 git diff -u
 
+git add
 git status
+git commit
+
+##################################################
+
+The Type
+The type is contained within the title and can be one of these types:
+
+feat: a new feature
+fix: a bug fix
+docs: changes to documentation
+style: formatting, missing semi colons, etc; no code change
+refactor: refactoring production code
+test: adding tests, refactoring test; no production code change
+chore: updating build tasks, package manager configs, etc; no production code change
+
+###################################################
+
+
+
+What happens when you initialize a repository? Why do you need to do it?
+
+This will create a .git directory, where the commit files or previous versions
+will be stored.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+Staging area is a place where you can mould your commits. before actually creating
+them. This allows the opportunity to maybe select multiple files and so on.
