@@ -1,56 +1,48 @@
-How did viewing a diff between two versions of a file help you see the bug that
+ASK : How did viewing a diff between two versions of a file help you see the bug that
 was introduced?
 
-The diff command displayed the relative changes made between the two files.
+SAY : The diff command displayed the relative changes made between the two files.
 It was very easy to pin point the error since the difference was a lot less
 content than the entire code.
 
 
-How could having easy access to the entire history of a file make you a more
+ASK : How could having easy access to the entire history of a file make you a more
 efficient programmer in the long term?
 
-Making coding more DRY. also easier debugging.
+SAY : Making coding more DRY. also easier debugging.
 
-What do you think are the pros and cons of manually choosing when to create a
+ASK : What do you think are the pros and cons of manually choosing when to create a
 commit, like you do in Git, vs having versions automatically saved, like Google
 Docs does?
 
-Might forget to do the commits. might feel lazy to commit?. Automatic commits,
+SAY : Might forget to do the commits. might feel lazy to commit?. Automatic commits,
 can become too large to traverse through to get some meaningful info.
 Unless intelligent intervention is in place.
 
-git log --stat
-git diff file1 file2
-
-
-Why do you think some version control systems, like Git, allow saving multiple
+ASK : Why do you think some version control systems, like Git, allow saving multiple
 files in one commit, while others, like Google Docs, treat each file separately?
 
-Because git handles version control for coding. Which can multiple files working
+SAY : Because git handles version control for coding. Which can multiple files working
 very much interconnected. Therefore it is important to have multiple files in one
 commit.
 
 
-How can you use the commands git log and git diff to view the history of files?
+ASK : How can you use the commands git log and git diff to view the history of files?
 
-You can use git log to see all the previous commits, along with the short message.
+SAY : You can use git log to see all the previous commits, along with the short message.
 And for any particular commit you could use the previous version to compare it
 with using the git diff command.
 
 
-git checkout //back to a previous commit
-//Detached head state
-
-
-How might using version control make you more confident to make changes that
+ASK : How might using version control make you more confident to make changes that
 could break something?
 
-You can always checkout to a previous version.
+SAY : You can always checkout to a previous version.
 
 
-Now that you have your workspace set up, what do you want to try using Git for?
+ASK : Now that you have your workspace set up, what do you want to try using Git for?
 
-For the current project i am working on..
+SAY : For the current project i am working on..
 
 #################################################
 git init
@@ -65,6 +57,17 @@ git status
 git commit
 
 git diff between staging area and working directory...!!!
+git diff --staged
+
+git reset --hard
+
+--------------------------------------------------
+git checkout //back to a previous commit
+//Detached head state
+--------------------------------------------------
+git diff -> working directory & staging area
+git diff --staged -> staging area & commit (latest)
+git diff commit1 commit2 -> commit1 & commit2
 ##################################################
 
 The Type
@@ -82,13 +85,18 @@ chore: updating build tasks, package manager configs, etc; no production code ch
 
 
 
-What happens when you initialize a repository? Why do you need to do it?
+ASK : What happens when you initialize a repository? Why do you need to do it?
 
-This will create a .git directory, where the commit files or previous versions
+SAY : This will create a .git directory, where the commit files or previous versions
 will be stored.
 
-How is the staging area different from the working directory and the repository?
+ASK : How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-Staging area is a place where you can mould your commits. before actually creating
+SAY : Staging area is a place where you can mould your commits. before actually creating
 them. This allows the opportunity to maybe select multiple files and so on.
+
+ASK : How can you use the staging area to make sure you have one commit per logical
+change?
+
+SAY : Use git diff to see the difference between working directory and staging area.
