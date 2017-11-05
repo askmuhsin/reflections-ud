@@ -61,6 +61,21 @@ git diff --staged
 
 git reset --hard
 
+git branch //shows all the branches
+git branch branch_name //creates new branch
+git checkout branch_name //switch between branches.
+
+git log --graph --oneline master branch_name
+
+git checkout -b new_branch_name // create new branch checkout to it
+
+git merge master branch_name
+
+git show // diff between given commit and its parent
+
+git branch -d branch_name // Delete branch once merges. -d stands for delete.
+
+
 --------------------------------------------------
 git checkout //back to a previous commit
 //Detached head state
@@ -84,7 +99,6 @@ chore: updating build tasks, package manager configs, etc; no production code ch
 ###################################################
 
 
-
 ASK : What happens when you initialize a repository? Why do you need to do it?
 
 SAY : This will create a .git directory, where the commit files or previous versions
@@ -100,3 +114,27 @@ ASK : How can you use the staging area to make sure you have one commit per logi
 change?
 
 SAY : Use git diff to see the difference between working directory and staging area.
+
+ASK : What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+SAY : When trying out new feautres, especially features that are not sequentially
+an improvement but may be on different variant. master branch will be the production
+quality branch that wont break.
+
+ASK : How do the diagrams help you visualize the branch structure?
+
+SAY : The diagram shows the parent or previous commits.
+
+ASK : What is the result of merging two branches together? Why do we represent
+it in the diagram the way we do?
+
+SAY : Merging two branches will create a new commit where the updates from each
+branch are checked to its priors and either been chosen to add or remove.
+Because the merged commit will have two parents and thus two histories.
+
+ASK : What are the pros and cons of Git’s automatic merging vs. always doing
+merges manually?
+
+SAY : Automatic merges saves a lot of time, and since it is only done when
+there are no conflicts means the program should run fine.
