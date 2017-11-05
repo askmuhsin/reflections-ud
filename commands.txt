@@ -1,0 +1,58 @@
+
+git init
+git clone
+git commit
+git log
+git checkout
+git diff -u
+
+git add
+git status
+git commit
+
+git diff between staging area and working directory...!!!
+git diff --staged
+
+git reset --hard
+
+git branch //shows all the branches
+git branch branch_name //creates new branch
+git checkout branch_name //switch between branches.
+
+git log --graph --oneline master branch_name
+
+git checkout -b new_branch_name // create new branch checkout to it
+
+git merge master branch_name
+
+git show // diff between given commit and its parent
+
+git branch -d branch_name // Delete branch once merges. -d stands for delete.
+
+git remote
+git remote add origin URL_TO_GITHUB // origin is just a conventional naming
+git remote -v //verify fetch and push loc.
+
+git push origin master // local to github
+
+git pull origin master // github to local
+
+--------------------------------------------------
+git checkout //back to a previous commit
+//Detached head state
+--------------------------------------------------
+git diff -> working directory & staging area
+git diff --staged -> staging area & commit (latest)
+git diff commit1 commit2 -> commit1 & commit2
+##################################################
+
+The Type
+The type is contained within the title and can be one of these types:
+
+feat: a new feature
+fix: a bug fix
+docs: changes to documentation
+style: formatting, missing semi colons, etc; no code change
+refactor: refactoring production code
+test: adding tests, refactoring test; no production code change
+chore: updating build tasks, package manager configs, etc; no production code change

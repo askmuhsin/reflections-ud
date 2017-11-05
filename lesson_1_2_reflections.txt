@@ -1,3 +1,5 @@
+LESSON_1
+
 ASK : How did viewing a diff between two versions of a file help you see the bug that
 was introduced?
 
@@ -44,60 +46,9 @@ ASK : Now that you have your workspace set up, what do you want to try using Git
 
 SAY : For the current project i am working on..
 
-#################################################
-git init
-git clone
-git commit
-git log
-git checkout
-git diff -u
-
-git add
-git status
-git commit
-
-git diff between staging area and working directory...!!!
-git diff --staged
-
-git reset --hard
-
-git branch //shows all the branches
-git branch branch_name //creates new branch
-git checkout branch_name //switch between branches.
-
-git log --graph --oneline master branch_name
-
-git checkout -b new_branch_name // create new branch checkout to it
-
-git merge master branch_name
-
-git show // diff between given commit and its parent
-
-git branch -d branch_name // Delete branch once merges. -d stands for delete.
-
-
---------------------------------------------------
-git checkout //back to a previous commit
-//Detached head state
---------------------------------------------------
-git diff -> working directory & staging area
-git diff --staged -> staging area & commit (latest)
-git diff commit1 commit2 -> commit1 & commit2
-##################################################
-
-The Type
-The type is contained within the title and can be one of these types:
-
-feat: a new feature
-fix: a bug fix
-docs: changes to documentation
-style: formatting, missing semi colons, etc; no code change
-refactor: refactoring production code
-test: adding tests, refactoring test; no production code change
-chore: updating build tasks, package manager configs, etc; no production code change
-
 ###################################################
 
+LESSON_2
 
 ASK : What happens when you initialize a repository? Why do you need to do it?
 
@@ -138,6 +89,3 @@ merges manually?
 
 SAY : Automatic merges saves a lot of time, and since it is only done when
 there are no conflicts means the program should run fine.
-
---------------------------------------------------------------------------------
-Sync Repositories.
