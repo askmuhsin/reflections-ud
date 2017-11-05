@@ -138,3 +138,6 @@ merges manually?
 
 SAY : Automatic merges saves a lot of time, and since it is only done when
 there are no conflicts means the program should run fine.
+
+--------------------------------------------------------------------------------
+Sync Repositories.
