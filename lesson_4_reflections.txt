@@ -14,3 +14,8 @@ you use one instead of another?
 
 SAY : Forks are direct cloning of a github repo to your own repo. Clone is cloning
 a repo to your local machine. Branches are versions that you create for your repo.
+
+ASK : What is the benefit of having a copy of the last known state of the
+remote stored locally?
+
+SAY : You have the flexibility of working offline.

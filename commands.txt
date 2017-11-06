@@ -37,6 +37,10 @@ git push origin master // local to github
 
 git pull origin master // github to local
 
+
+git fetch origin
+
+
 --------------------------------------------------
 git checkout //back to a previous commit
 //Detached head state
