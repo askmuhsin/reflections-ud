@@ -19,3 +19,8 @@ ASK : What is the benefit of having a copy of the last known state of the
 remote stored locally?
 
 SAY : You have the flexibility of working offline.
+
+ASK : When would you want to make changes in a separate branch rather than
+directly in master? What benefits does each approach have?
+
+SAY : When you want to test out a concept without affecting the master.
